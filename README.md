@@ -16,8 +16,13 @@ As the disclaimer will warn you:
 ************** WARNING: A dark dungeon lies ahead of you  **************
 ************************************************************************
 ```
+## More Info About ES Rally
 
-# Usage
+This project came about after watching the fantastic ES Rally intro video from Daniel Mitterdorfer: https://www.youtube.com/watch?v=HriBY2zoChw
+
+The ES Rally docs can be found here: http://esrally.readthedocs.io/en/latest/
+
+## Usage
 
 There's one ENV variable that defaults to `192.168.99.100:9200` for Kitematic use, but you can over-ride it as follows: 
 
@@ -27,7 +32,7 @@ docker run -it ryanmaclean/esrally:latest -e ENDPOINT="54.32.263.2:9200"
 
 This assumes that `54.32.263.2` is the primary endpoint of your cluster, and that you're using `9200` as the Elasticsearch port. 
 
-# Sample Output
+## Sample Output
 
 ```
     ____        ____
