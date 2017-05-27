@@ -76,3 +76,7 @@ the index size).
 [INFO] Decompressing track data from [/root/.rally/benchmarks/data/geonames/documents-2.json.bz2] to [/root/.rally/benchmarks/data/geonames/documents-2.json] (resulting size: 3.30 GB) ... [OK]
 [INFO] Preparing file offset table for [/root/.rally/benchmarks/data/geonames/documents-2.json] ... [OK]
 ```
+
+# Contributing
+
+Contributions in the form of pull requests and issues are welcome! For example, version increments, upstream fixes and failing automated builds in Docker Hub all sound like future issues that might arise as the images are built everytime the Python image defined in `FROM` is updated. 
