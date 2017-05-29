@@ -1,5 +1,6 @@
 # esrally-docker
-[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=ryanmaclean&repository=esrally)]
+[](https://dockerbuildbadges.quelltext.eu/status.svg?organization=ryanmaclean&repository=esrally)
+
 An Elastic ES Rally Docker container image that allows you to run ESRally in moby and point it at a remote Elasticsearch host/cluster in order to run and re-run benchmarks. 
 
 Based on the work found here: https://github.com/honestbee/docker-esrally but much less grandiose in scope, and more automated. 
