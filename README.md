@@ -68,6 +68,7 @@ It took quite a while to run, and you can see that the boot2docker host should h
 
 <details>
   <summary>Click to expand</summary><p>
+  
 ```
     ____        ____
    / __ \____ _/ / /_  __
