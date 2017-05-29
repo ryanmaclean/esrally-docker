@@ -7,7 +7,7 @@ Based on the work found here: https://github.com/honestbee/docker-esrally but mu
 
 This docker container is expected to be used as a remote target benchmark. 
 
-Warning: it will download a 250MB+ file and expand it to 3.30GB. It will ingest this data into the Elasticsearch cluster that you point it it. 
+Warning: it will download a 250MB+ file and expand it to 3.30GB. It will ingest this data into the Elasticsearch cluster that you point it at. 
 
 As the disclaimer will warn you: 
 
