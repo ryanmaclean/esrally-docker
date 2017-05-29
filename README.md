@@ -42,9 +42,7 @@ This assumes that `54.32.263.2` is the primary endpoint of your cluster, and tha
 
 ## Usage with Elastic Cloud
 
-Elastic Cloud has a remote server connection and security as well as certs enabled, so our string gets a bit long. On top of this, 
-if you're using the trial, the budget allocated for two weeks means that the cluster will be yellow, requiring an optional esrally
-parameter to allow the test to continue.
+Elastic Cloud has a remote server connection and security as well as certs enabled, so our string gets a bit long. On top of this, if you're using the trial, the budget allocated for two weeks means that the cluster will be yellow, requiring an optional esrally parameter to allow the test to continue.
 
 For example:
 
