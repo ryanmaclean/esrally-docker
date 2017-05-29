@@ -65,9 +65,6 @@ docker run -it ryanmaclean/esrally:latest -e \
 This is from a terminal session running against the official Elastic Docker container for version 5.4 on a Mid 2015 maxed-out Macbook Pro (not pretty).
 
 It took quite a while to run, and you can see that the boot2docker host should have been tweaked beforehand, but this should be a good baseline of a badly tuned cluster. 
-
-<details>
-  <summary>Click to expand</summary><p>
   
 ```
     ____        ____
@@ -360,7 +357,6 @@ Running large_prohibited_terms                                                 [
 ----------------------------------
 ```
 
-</p></details>
 
 # Contributing
 
