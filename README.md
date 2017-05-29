@@ -66,6 +66,8 @@ This is from a terminal session running against the official Elastic Docker cont
 
 It took quite a while to run, and you can see that the boot2docker host should have been tweaked beforehand, but this should be a good baseline of a badly tuned cluster. 
 
+<details>
+  <summary>Click to expand</summary>
 ```
     ____        ____
    / __ \____ _/ / /_  __
@@ -356,6 +358,8 @@ Running large_prohibited_terms                                                 [
 [INFO] SUCCESS (took 8844 seconds)
 ----------------------------------
 ```
+
+</details>
 
 # Contributing
 
