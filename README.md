@@ -26,13 +26,13 @@ The ES Rally docs can be found here: http://esrally.readthedocs.io/en/latest/
 
 ## Usage
 
-There's are two ENV variables, one `ENDPOINT` var that defaults to `192.168.99.100:9200` for Kitematic use, but you can over-ride it as follows: 
+There's are three ENV variables, one `ENDPOINT` var that defaults to `192.168.99.100:9200` for Kitematic use, but you can over-ride it as follows: 
 
 ```
 docker run -it ryanmaclean/esrally:latest -e ENDPOINT="54.32.263.2:9200"
 ```
 
-The other is `CREDENTIALS`, and is left blank, but may be needed when testing X-Pack-enabled clusters. That can be done as follows:
+Another is `CREDENTIALS`, and is left blank, but may be needed when testing X-Pack-enabled clusters. That can be done as follows:
 
 ```
 docker run -it ryanmaclean/esrally:latest -e CREDENTIALS=--client-options="basic_auth_user:'user',basic_auth_password:'password'"
@@ -42,7 +42,7 @@ This assumes that `54.32.263.2` is the primary endpoint of your cluster, and tha
 
 ## Usage with Elastic Cloud
 
-Elastic Cloud has a remote server connection and security as well as certs enabled, so our string gets a bit long. On top of this, if you're using the trial, the budget allocated for two weeks means that the cluster will be yellow, requiring an optional esrally parameter to allow the test to continue.
+Elastic Cloud has a remote server connection and security as well as certs enabled, so our string gets a bit long. On top of this, if you're using the trial, the budget allocated for two weeks means that the cluster will be yellow, requiring an final third CLUSTERHEALTH Docker ENV var that translates to an esrally parameter which will allow the test to continue.
 
 For example:
 
