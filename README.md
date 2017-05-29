@@ -42,7 +42,9 @@ This assumes that `54.32.263.2` is the primary endpoint of your cluster, and tha
 
 ## Usage with Elastic Cloud
 
-Elastic Cloud has a remote server connection and security as well as certs enabled, so our string gets a bit long. 
+Elastic Cloud has a remote server connection and security as well as certs enabled, so our string gets a bit long. On top of this, 
+if you're using the trial, the budget allocated for two weeks means that the cluster will be yellow, requiring an optional esrally
+parameter to allow the test to continue.
 
 For example:
 
@@ -56,6 +58,8 @@ docker run -it ryanmaclean/esrally:latest -e \
          basic_auth_password:'lkjsadioioasdlkjas822'
    ENDPOINT=\
       0983209823883892039265cd8046e4.us-west-1.aws.found.io:9243
+   CLUSTERHEALTH=\
+      --cluster-health=yellow
 ```
 
 ## Sample Output
