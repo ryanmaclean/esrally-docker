@@ -40,6 +40,24 @@ docker run -it ryanmaclean/esrally:latest -e CREDENTIALS=--client-options="basic
 
 This assumes that `54.32.263.2` is the primary endpoint of your cluster, and that you're using `9200` as the Elasticsearch port. 
 
+## Usage with Elastic Cloud
+
+Elastic Cloud has a remote server connection and security as well as certs enabled, so our string gets a bit long. 
+
+For example:
+
+```
+docker run -it ryanmaclean/esrally:latest -e \
+   CREDENTIALS=\
+      --client-options=\
+         use_ssl:true,\
+         verify_certs:true,\
+         basic_auth_user:'elastic',\
+         basic_auth_password:'lkjsadioioasdlkjas822'
+   ENDPOINT=\
+      0983209823883892039265cd8046e4.us-west-1.aws.found.io:9243
+```
+
 ## Sample Output
 
 ```
