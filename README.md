@@ -5,7 +5,7 @@ An Elastic ES Rally Docker container image that allows you to run ESRally in a c
 
 Based on the work found here: https://github.com/honestbee/docker-esrally but much less grandiose in scope, and more automated.
 
-It does a good job of punishing smaller clusters:
+It does a good job of punishing smaller clusters, here's a sample from the Elastic Cloud trial cluster:
 
 ![Elastic Cloud Dashboard](https://raw.githubusercontent.com/ryanmaclean/esrally-docker/master/esrally1.png?raw=true "Sample from Elastic Cloud Trial")
 ![Elastic Cloud Dashboard](https://raw.githubusercontent.com/ryanmaclean/esrally-docker/master/esrally2.png?raw=true "Sample from Elastic Cloud Trial")
