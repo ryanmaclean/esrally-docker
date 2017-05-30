@@ -8,4 +8,4 @@ COPY rally.ini /root/.rally/
 ENV ENDPOINT="192.168.99.100:9200"
 ENV CREDENTIALS=""
 ENV CLUSTERHEALTH=""
-CMD esrally --pipeline=benchmark-only --target-hosts=$ENDPOINT $CREDENTIALS
+CMD esrally --pipeline=benchmark-only --target-hosts=$ENDPOINT $CREDENTIALS $CLUSTERHEALTH
