@@ -34,13 +34,13 @@ The ES Rally docs can be found here: http://esrally.readthedocs.io/en/latest/
 There's are three ENV variables, one `ENDPOINT` var that defaults to `192.168.99.100:9200` for Kitematic use, but you can over-ride it as follows: 
 
 ```
-docker run -it ryanmaclean/esrally:latest -e ENDPOINT="54.32.263.2:9200"
+docker run -it -e ENDPOINT="54.32.263.2:9200" ryanmaclean/esrally:latest
 ```
 
 Another is `CREDENTIALS`, and is left blank, but may be needed when testing X-Pack-enabled clusters. That can be done as follows:
 
 ```
-docker run -it ryanmaclean/esrally:latest -e CREDENTIALS=--client-options="basic_auth_user:'user',basic_auth_password:'password'"
+docker run -it -e CREDENTIALS=--client-options="basic_auth_user:'user',basic_auth_password:'password'" ryanmaclean/esrally:latest 
 ```
 
 This assumes that `54.32.263.2` is the primary endpoint of your cluster, and that you're using `9200` as the Elasticsearch port. 
@@ -52,17 +52,18 @@ Elastic Cloud has a remote server connection and security as well as certs enabl
 For example:
 
 ```
-docker run -it ryanmaclean/esrally:latest -e \
-   CREDENTIALS=\
+docker run -it \
+   - e CREDENTIALS=\
       --client-options=\
          use_ssl:true,\
          verify_certs:true,\
          basic_auth_user:'elastic',\
          basic_auth_password:'lkjsadioioasdlkjas822'
-   ENDPOINT=\
+   -e ENDPOINT=\
       0983209823883892039265cd8046e4.us-west-1.aws.found.io:9243
-   CLUSTERHEALTH=\
-      --cluster-health=yellow
+   -e CLUSTERHEALTH=\
+      --cluster-health=yellow\
+   ryanmaclean/esrally:latest
 ```
 
 ## Sample Output
