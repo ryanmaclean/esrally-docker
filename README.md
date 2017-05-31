@@ -7,8 +7,8 @@ Based on the work found here: https://github.com/honestbee/docker-esrally but mu
 
 It does a good job of punishing smaller clusters, here's a sample from the Elastic Cloud trial cluster:
 
-![Elastic Cloud Dashboard](https://raw.githubusercontent.com/ryanmaclean/esrally-docker/master/esrally1.png?raw=true "Sample from Elastic Cloud Trial")
-![Elastic Cloud Dashboard](https://raw.githubusercontent.com/ryanmaclean/esrally-docker/master/esrally2.png?raw=true "Sample from Elastic Cloud Trial")
+![Elastic Cloud Dashboard](https://raw.githubusercontent.com/ryanmaclean/esrally-docker/master/images/esrally1.png?raw=true "Sample from Elastic Cloud Trial")
+![Elastic Cloud Dashboard](https://raw.githubusercontent.com/ryanmaclean/esrally-docker/master/images/esrally2.png?raw=true "Sample from Elastic Cloud Trial")
 
 # ES Rally in Docker
 
