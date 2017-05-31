@@ -31,7 +31,7 @@ The ES Rally docs can be found here: http://esrally.readthedocs.io/en/latest/
 
 ## Usage
 
-There's are three ENV variables, one `ENDPOINT` var that defaults to `192.168.99.100:9200` for Kitematic use, but you can over-ride it as follows: 
+There's are three ENV variables, one `PIPELINE`, which defaults to `--pipeline=benchmark-only`, an `ENDPOINT` var that defaults to `192.168.99.100:9200` for Kitematic use, but you can over-ride it as follows: 
 
 ```
 docker run -it -e ENDPOINT="54.32.263.2:9200" ryanmaclean/esrally:latest
