@@ -13,7 +13,7 @@ ENV HTTPPROXY=""
 RUN apk add --update --no-cache git build-base linux-headers python-dev openjdk8
 RUN pip install esrally==$RALLYVER
 RUN export http_proxy=$HTTPPROXY
-RUN if [[ ! $HTTPPROXY ]]; then git config --global http.proxy $HTTPPROXY
+RUN if [[ ! $HTTPPROXY ]]; then git config --global http.proxy $HTTPPROXY; fi
 
 COPY config/$RALLYCONFIG /root/.rally/
 
