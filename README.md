@@ -1,5 +1,5 @@
 # esrally-docker
-[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=ryanmaclean&repository=esrally)](https://hub.docker.com/r/ryanmaclean/esrally/builds/) 
+[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=ryanmaclean&repository=esrally)](https://hub.docker.com/r/ryanmaclean/esrally/builds/) [![CircleCI](https://circleci.com/gh/ryanmaclean/esrally-docker.svg?style=svg)](https://circleci.com/gh/ryanmaclean/esrally-docker)
 
 An Elastic ES Rally Docker container image that allows you to run ESRally in a container and point it at a remote Elasticsearch host/cluster in order to run and re-run benchmarks. 
 
